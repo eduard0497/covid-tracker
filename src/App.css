@@ -1,4 +1,40 @@
-.App {
-  
+.app__container {
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
+.app__container__left {
+	flex: 0.8;
+}
+
+.app__container__right {
+	margin-top: 20px;
+}
+
+
+.left__title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.left__cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left__countryFlag {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+@media (max-width: 990px) {
+	.app__container {
+		flex-direction: column;
+	}
+}
